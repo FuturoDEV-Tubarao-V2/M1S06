@@ -29,6 +29,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 main #section-calculadora {
@@ -90,6 +91,19 @@ main #section-calculadora .calculadora .teclado .linha .operador {
 
 main #section-calculadora .calculadora .teclado .linha .acao {
   background-color: lightgreen;
+}
+
+main #section-historico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main #section-historico button {
+  margin-top: 16px;
+  width: fit-content;
+  height: fit-content;
 }
 
 footer {
