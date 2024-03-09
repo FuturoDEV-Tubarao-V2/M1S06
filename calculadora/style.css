@@ -46,6 +46,10 @@ main #section-calculadora .calculadora {
 
 main #section-calculadora .calculadora .display #display-info {
   background-color: darkslategray;
+  color: white;
+  width: 165px;
+  height: 25px;
+  display: block;
 }
 
 main #section-calculadora .calculadora .teclado {

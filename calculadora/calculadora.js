@@ -1,7 +1,22 @@
-/*
-let numeroA = prompt('Digite o primeiro numero');
-let numeroB = prompt('Digite o segundo numero');
-let operacao = prompt('Digite a operação a ser realizada');
+var display = '';
 
-window.alert('A soma dos números é: ' + eval(numeroA + operacao + numeroB));
-*/
+function agregarDisplay(elemento) {
+  this.atualizarDisplay(display += elemento);
+}
+
+function calcularOperacao() {
+  this.atualizarDisplay(eval(display));
+}
+
+function limpar() {
+  this.atualizarDisplay('');
+}
+
+function atualizarDisplay(valor) {
+  display = valor;
+  var displayInfo = document.getElementById('display-info');
+  //input
+  //displayInfo.value = '';
+  //span
+  displayInfo.innerHTML = valor;
+}
